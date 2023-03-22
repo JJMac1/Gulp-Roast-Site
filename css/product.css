@@ -1,0 +1,223 @@
+html {
+    min-height: 100%;
+    box-sizing: border-box;
+   }
+  
+  *, 
+  *::before, 
+  *::after {
+      box-sizing: inherit;
+   }
+  
+  
+  body {
+    margin: 0;
+    padding: 0;
+    background-image: url('https://i.postimg.cc/264LBfk6/gulp-coffee-beans.jpg'); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    }
+  
+  #logo {
+      flex: 0 1 auto;
+      display: block;
+    min-height: 90px;
+    max-width: 260px;
+      overflow: hidden;
+    text-align: center;
+  }
+  #header-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  header {
+      width: 940px;
+  }
+  
+  #primary-menu {
+      width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  #primary-menu .split-menu {
+      border: 1px solid #131D26;
+      border-width: 1px 0;
+      width: 300px;
+  }
+  
+  /* parent menu */
+  #primary-menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    line-height: 40px;
+      text-align: center;
+  }
+  /* children */
+  #primary-menu ul li {
+    border: 1px #131D26;
+      border-width: 0 2px;
+      position: relative;
+      display: inline;
+  }
+  
+  #primary-menu ul li:hover {
+      border: 1px dashed #D98555;
+      border-width: 0 1px;
+      visibility: inherit;
+  }
+  
+  #primary-menu ul a {
+      color:  #131D26;
+      display: block;
+      font: normal normal 16px 'Poppins', sans-serif;
+    font-weight: bold;
+      line-height: 36px;
+      padding: 0 20px;
+      position: relative;
+      text-decoration: none;
+  }
+  
+  i{
+   margin-right: 10px;  
+  }
+  
+  #primary-menu ul li a:hover {
+   color: #D98555; 
+  }
+  
+  .primary-menu ul ul li a { 
+    text-align: left; 
+  }
+  
+  #primary-menu ul ul li { 
+    display: block; 
+    color: #D98555;
+  }
+  
+  /* added in max-width */
+  
+  @media screen and (max-width: 900px) {
+    #primary-menu {
+      flex-direction: column;
+    }
+  }
+  
+  .title h1{
+    color: #F2F2F2;
+    text-shadow: 1px 1px 0 rgba(0,0,0,.2);
+    font-family: 'Poppins', sans-serif;
+    font-size: 60px;
+    text-align: center;
+    margin-top: 5px;
+  }
+  
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    max-width: 900px;
+    align-self: center;
+    margin: 30px;
+    padding: 16px;
+  }
+  
+  .card {
+    background-color: #F2F2F2;
+    box-shadow: 0 0 3px #131D26; 
+    border-radius: 10px;
+    margin: 8px;
+    padding: 10px;
+  }
+  
+  .card h2{
+     text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+  padding: 0 1rem;
+  }
+  
+  .card p {
+    text-align: left;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+  padding: 0 1rem;
+      
+    }
+  
+  
+  .product__content {
+    padding: 5px 5px 0 10px;
+    font-family: 'lato', sans-serif;  
+  }
+  
+  img {
+    /*take out display block ?*/
+    max-width: 100%;
+    border-radius: 10px 10px 10px 10px;
+    padding: 1rem 1rem 1rem 1rem;
+  }
+   
+  p {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  
+    font-family: "Lato", sans-serif;
+    font-size: 18px;
+  }
+  
+  .footer{
+      background-color: #131D26;
+      color:#59331D;
+      padding: 0px 0px;
+      font-family: 'Poppins', sans-serif;
+      text-align: center;
+    }
+    
+    .footer .row{
+      width:100%;
+      margin: 0%;
+      padding:0.6% 0%;
+      display: inline-block;
+      color:#F2F2F2;
+      font-size: 14px;
+    }
+    
+    .footer .row a{
+      text-decoration:none;
+      color:#F2F2F2;
+      transition:0.5s;
+    }
+    
+    .footer .row a:hover{
+      color:#D98555;
+    }
+    
+    .footer .row ul{
+      width:100%;
+    }
+    
+    .footer .row a i{
+    font-size:24px;
+    margin:0% 3%;
+    }
+    
+   @media (max-width: 750px) {
+    .container {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-around;
+    }
+     
+     
+  }
+  

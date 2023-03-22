@@ -1,0 +1,228 @@
+html {
+    min-height: 100%;
+    box-sizing: border-box;
+    /* took out margin and padding of 0 */
+   }
+  
+  *, 
+  *::before, 
+  *::after {
+      box-sizing: inherit;
+   }
+  
+  
+  body {
+    background-color: #F2F2F2; 
+    min-height: 90vh;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-image: url('https://i.postimg.cc/C5Dq66Rt/coffeebeanillustration-jpeg.png'); 
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column; 
+  }
+  
+  
+  .clip-image {
+    align-self: center;
+    -webkit-clip-path: circle();
+    clip-path: circle();
+    backdrop-filter: blur(5px) cover: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 80px;
+    min-width: 300px;
+    max-width: 900px;
+  }
+  
+  #logo {
+      flex: 0 1 auto;
+      display: block;
+    min-height: 90px;
+    max-width: 260px;
+      overflow: hidden;
+    text-align: center;
+  }
+  
+  #header-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  header {
+      width: 940px;
+  }
+  
+  #primary-menu {
+      width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  #primary-menu .split-menu {
+      border: 1px solid #131D26;
+      border-width: 1px 0;
+      width: 300px;
+  }
+  
+  /* parent menu */
+  #primary-menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    line-height: 40px;
+      text-align: center;
+  }
+  /* children */
+  #primary-menu ul li {
+    border: 1px #131D26;
+      border-width: 0 2px;
+      position: relative;
+      display: inline;
+  }
+  
+  #primary-menu ul li:hover {
+      border: 1px dashed #D98555;
+      border-width: 0 1px;
+      visibility: inherit;
+  }
+  
+  #primary-menu ul a {
+      color:  #131D26;
+      display: block;
+      font: normal normal 16px 'Poppins', sans-serif;
+    font-weight: bold;
+      line-height: 36px;
+      padding: 0 20px;
+      position: relative;
+      text-decoration: none;
+  }
+  
+  i{
+   margin-right: 10px;  
+  }
+  
+  #primary-menu ul li a:hover {
+   color: #D98555; 
+  }
+  
+  .primary-menu ul ul li a { 
+    text-align: left; 
+  }
+  
+  #primary-menu ul ul li { 
+    display: block; 
+    color: #D98555;
+  }
+  
+  /* add in 900max-width to fix the splitnav? */
+  
+  
+  .title h1{
+    color: #131D26;
+    text-shadow: 1px 1px 0 rgba(0,0,0,.4);
+    font-family: 'Poppins', sans-serif;
+    font-size: 60px;
+    text-align: center;
+    margin-top: 5px;
+  }
+  
+  .content{
+   font-family: Poppins, sans-serif;
+   font-size: 24px;
+   text-align: center;
+  }
+  
+  a:link {
+    color: #59331D;
+    font-style: italic;
+    text-decoration-line: underline;
+  }
+  
+  a:hover{
+    color: #D98555;
+    text-transform: bold;
+  }
+  
+  .button-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  
+  .button{
+    background-color:  #D98555;
+    color:  #131D26;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin: 1rem 0 0 0; 
+    padding: .7rem 1rem;
+    border-radius: 25px;
+    cursor: pointer;
+    opacity: 1;
+    text-align: center;
+    white-space: nowrap;
+    box-shadow: 0 .0 .9px .9px #131D26;
+  }
+  
+  .button:hover {
+    color: #F2F2F2;
+    background-color: #131D26;
+    opacity: 1;
+  }
+  
+  
+  
+  .footer{
+      background-color: #131D26;
+      color:#59331D;
+      padding: 0px 0px;
+      font-family: 'Poppins', sans-serif;
+      text-align: center;
+    }
+    
+    .footer .row{
+      width:100%;
+      margin: 0%;
+      padding:0.6% 0%;
+      display: inline-block;
+      color:#F2F2F2;
+      font-size: 14px;
+    }
+    
+    .footer .row a{
+      text-decoration:none;
+      color:#F2F2F2;
+      transition:0.5s;
+    }
+    
+    .footer .row a:hover{
+      color:#D98555;
+    }
+    
+    .footer .row ul{
+      width:100%;
+    }
+    
+    .footer .row a i{
+    font-size:24px;
+    margin:0% 3%;
+    }
+  
+    
+    @media screen and (max-width: 900px) {
+        #primary-menu {
+          flex-direction: column;
+        }
+      }
